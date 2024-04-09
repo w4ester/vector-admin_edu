@@ -30,7 +30,7 @@ def as_pdf(**kwargs):
     page_content += unidecode(page.get_text('text'))
 
   if len(page_content) == 0:
-    print(f"Resulting page content was empty - no text could be extracted from the document.")
+    print("Resulting page content was empty - no text could be extracted from the document.")
     return []
   
   title = doc.metadata.get('title')
